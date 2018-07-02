@@ -1,6 +1,6 @@
 .hero {
     background-color: black;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     margin: 0 auto;
     color: white;
@@ -8,9 +8,11 @@
     background-repeat: no-repeat;
     background-size: 100%;
 }
-.hero h1{
+.tour {
     display: flex;
     justify-content: center;
+    
+    
 }
 #nav-button {
   position: absolute;
