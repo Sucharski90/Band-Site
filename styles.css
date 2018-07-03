@@ -4,7 +4,7 @@
     width: 100vw;
     margin: 0 auto;
     color: white;
-    background-image: url("Images/a7x-logo.jpeg");
+    /* background-image: url("Images/a7x-logo.jpeg"); */
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -16,7 +16,7 @@
     
 }
 #nav-button {
-  position: absolute;
+  position: fixed;
   top: 0;
   font-size: 35px;
   margin: 0 auto;
@@ -73,6 +73,13 @@
     grid-template-columns: 7% 20% 20% 10%;
     justify-content: center;
     padding-bottom: 40px;
+    grid-template-rows: repeat(auto, 6em);
+    max-width: 760px;
+    margin: auto;
+    border: gray solid 40px;
+    background: gray;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
  
  .tour-dates1 p {
@@ -89,14 +96,10 @@
  }
  .tickets {
    color: white;
-   background-color: #11173f;
+   
  }
 
- #gallery-main {
-     height: 100vh;
-     width: 100vw;
-    background-color: maroon;
- }
+
  .image-gallery {
      padding: 0;
      background: black;
@@ -134,7 +137,7 @@
     filter: grayscale(100%);
  }
 
- /* footer {
+ footer {
     display: flex;
     justify-content: flex-end;
     bottom:0;
@@ -153,9 +156,12 @@
  }
  footer a:hover {
      color: maroon;
- } */
+ }
 
  @media (min-width: 0px) and (max-width: 767px) {
+     .hero {
+         height: 40vh;
+     }
     #nav-button {
         font-size: 10px;
     }
@@ -169,12 +175,11 @@
         display: grid;
         grid-auto-rows: min-content;
         grid-gap: 25px;
-        height: 100%;
-        
+        height: auto;
+        grid-template-columns: auto;
     }
-    /* footer a{
-        font-size: 1em;
-        bottom: 0;
-    } */
+    footer {
+        display: none;
+    }
  }
  
