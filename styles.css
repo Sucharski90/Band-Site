@@ -97,6 +97,42 @@
      width: 100vw;
     background-color: maroon;
  }
+ .image-gallery {
+     padding: 0;
+     background: black;
+ }
+ .container {
+    max-width: 760px;
+    height: 100%;
+    margin: auto;
+    border: gray solid 40px;
+    background: gray;
+    padding-top: 30px;
+    padding-bottom: 30px;
+ }
+ .main-img img,
+ .imgs img{
+     width: 100%;
+     
+ }
+ #current {
+    height: 30%;
+    max-height: 400px;
+    padding-bottom: 20px;
+ }
+ .imgs {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-gap: 25px;
+     height: 100%;
+     
+ }
+ .imgs img {
+    box-shadow: 20px 20px 50px 10px black;
+ }
+ .imgs img:hover {
+    filter: grayscale(100%);
+ }
 
  /* footer {
     display: flex;
@@ -119,27 +155,26 @@
      color: maroon;
  } */
 
- @media (min-width: 320px) and (max-width: 767px) {
+ @media (min-width: 0px) and (max-width: 767px) {
     #nav-button {
         font-size: 10px;
     }
     .tour-dates{
         font-size: 2%;
     }
-    /* footer a{
-        font-size: 1em;
-        bottom: 0;
-    } */
- }
- @media (min-width: 0px) and (max-width: 319px) {
-    #nav-button {
-        font-size: 10px;
+    .container {
+        height: 100vh;
     }
-    .tour-dates{
-        font-size: 2%;
+    .imgs {
+        display: grid;
+        grid-auto-rows: min-content;
+        grid-gap: 25px;
+        height: 100%;
+        
     }
     /* footer a{
         font-size: 1em;
         bottom: 0;
     } */
  }
+ 
