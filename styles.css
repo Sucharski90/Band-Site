@@ -72,6 +72,7 @@
     display: grid;
     grid-template-columns: 7% 20% 20% 10%;
     justify-content: center;
+    padding-bottom: 40px;
   }
  
  .tour-dates1 p {
@@ -92,9 +93,44 @@
  }
 
  footer {
-    position:absolute;
+    display: flex;
+    justify-content: flex-end;
     bottom:0;
     background-color: red;
-    height: 3px;
+    height: 30px;
     width: 100%;
+ }
+ 
+ footer a {
+     text-decoration: none;
+     font-size: 30px;
+     color: white;
+ }
+ footer a:hover {
+     color: maroon;
+ }
+
+ @media (min-width: 320px) and (max-width: 767px) {
+    #nav-button {
+        font-size: 10px;
+    }
+    .tour-dates{
+        font-size: 2%;
+    }
+    footer a{
+        font-size: 1em;
+        bottom: 0;
+    }
+ }
+ @media (min-width: 0px) and (max-width: 319px) {
+    #nav-button {
+        font-size: 10px;
+    }
+    .tour-dates{
+        font-size: 2%;
+    }
+    footer a{
+        font-size: 1em;
+        bottom: 0;
+    }
  }
