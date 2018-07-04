@@ -1,19 +1,17 @@
 .hero {
-    background-color: black;
     height: 90vh;
     width: 100vw;
     margin: 0 auto;
-    color: white;
-    /* background-image: url("Images/a7x-logo.jpeg"); */
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
 }
-.tour {
-    display: flex;
-    justify-content: center;
-    
-    
+.side-menu {
+    background: url("Images/skull-bat.jpeg") no-repeat;
+    height: 70px;
+    width: 160px;
+    margin: 0 auto;
+    background-size: 100%;
 }
 #nav-button {
   position: fixed;
@@ -61,10 +59,11 @@
     padding: 0;
  }
  #tour-dates-header {
-     display: flex;
-     justify-content: center;
-     font-size: 30px;
-     padding: 30px 0 40px 0; 
+    font-family: 'Permanent Marker', cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 30px 0 40px 0; 
  }
  .tour-dates {
     height: 600px;
@@ -80,6 +79,9 @@
     background: gray;
     padding-top: 30px;
     padding-bottom: 30px;
+    background: url("Images/tours-back.jpeg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
  
  .tour-dates1 p {
@@ -95,11 +97,10 @@
    color: grey;
  }
  .tickets {
+    font-family: 'IM Fell English SC', serif;
    color: white;
    
  }
-
-
  .image-gallery {
      padding: 0;
      background: black;
@@ -150,7 +151,7 @@
  
  footer a {
      text-decoration: none;
-     font-size: 30px;
+     font-size: 80%;
      color: white;
      padding-right: 10px;
  }
