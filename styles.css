@@ -138,7 +138,11 @@
  .imgs img:hover {
     filter: grayscale(100%);
  }
-
+.history {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* max-width: 760px; */
+}
  .history h1 {
      text-transform: uppercase;
      font-family: 'Permanent Marker', cursive;
