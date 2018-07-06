@@ -21,6 +21,7 @@
   padding: 0;
   background-color: gray;
   width: 11%;
+  -webkit-animation-delay: 1.3s; 
 }
 
 #nav {
