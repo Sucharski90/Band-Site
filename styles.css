@@ -189,12 +189,12 @@
     .container {
         height: 100vh;
     }
+    .main-img {
+        display: none;
+    }
     .imgs {
         display: grid;
-        grid-auto-rows: min-content;
-        grid-gap: 25px;
-        height: auto;
-        grid-template-columns: auto;
+        grid-template-columns: 2fr 2fr;
     }
     footer {
         display: none;
