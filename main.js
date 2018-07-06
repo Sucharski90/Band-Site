@@ -26,3 +26,47 @@ function imgClick(e) {
     // e.target.style.opacity = opacity;
 }
 
+//band members 
+let index = 0;
+const members = [
+  {
+  name: "M. Shadows",
+  instrument: "Lead Vocals",
+  bio: "Matthew Charles Sanders (born July 31, 1981), better known as M. Shadows, is an American singer, songwriter, and musician. He is best known as the lead vocalist, songwriter, and a founding member of the American heavy metal band Avenged Sevenfold. In 2017, he was voted 3rd in the list of Top 25 Greatest Modern Frontmen by Ultimate Guitar."
+},
+  {
+    name: "Synyster Gates",
+    instrument: "Lead Guitarist and Backing Vocalist",
+    bio: "Brian Elwin Haner Jr. (born July 7, 1981), better known by his stage name Synyster Gates or simply Syn, is an American musician, best known for being the lead guitarist and backing vocalist of the band Avenged Sevenfold. He ranks No. 87 on Guitar World's 100 Greatest Guitarists of All Time. Gates was voted as Best Metal Guitarist in the World by Total Guitar in 2016 and once again in 2017"
+  }
+
+];
+
+// render info
+const renderMembers = () => {
+  let currentMember = members[index];
+  let name = document.querySelector('#name');
+  let instrument = document.querySelector('#instrument');
+  let bio = document.querySelector('#bio');
+  name.innerHTML = currentMember.name;
+  instrument.innerHTML = currentMember.instrument;
+  bio.innerHTML = currentMember.bio;
+}
+renderMembers();
+// cycle members
+const nextMember = () => {
+  index++;
+  renderMembers();
+  console.log(index);
+};
+const lastMember = () => {
+  index -= 1;
+  renderMembers();
+  console.log(index);
+};
+
+  let next = document.querySelector('#next')
+  next.addEventListener('click', nextMember);
+
+  let last = document.querySelector('#last')
+  last.addEventListener('click', lastMember);
