@@ -179,6 +179,12 @@
     max-width: 760px;
     justify-content: center;
 }
+.mem-btn {
+    font-size: 30px;
+    display: flex;
+    justify-content: center !important;
+    align-content: center;
+}
  footer {
     display: flex;
     justify-content: flex-end;
