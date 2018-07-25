@@ -42,16 +42,16 @@ const members = [
   {
     name: "Brooks Wackerman",
     instrument: "Drums",
-    bio: "On November 4, 2015, it was revealed that Wackerman was the new drummer for Avenged Sevenfold.[2] Brooks was working with the band one year prior to the official announcement, because the band wanted to fit in with the new drummer. Like the previous drummer Arin Ilejay, but unlike the rest of the band members, he currently does not have a stage name. His first full-length album with the band was their October 2016 release The Stage, which showcased his progressive style of drumming, often using fast double-bass kicks and blast beats."
+    bio: "On November 4, 2015, it was revealed that Wackerman was the new drummer for Avenged Sevenfold. Brooks was working with the band one year prior to the official announcement, because the band wanted to fit in with the new drummer. Like the previous drummer Arin Ilejay, but unlike the rest of the band members, he currently does not have a stage name. His first full-length album with the band was their October 2016 release The Stage, which showcased his progressive style of drumming, often using fast double-bass kicks and blast beats."
   },
   {
     name: "Zacky Vengeance",
-    instrument: "",
+    instrument: "Rhythm Guitar",
     bio: ""
   },
   {
     name: "Johnny Christ",
-    instrument: "",
+    instrument: "Bass",
     bio: ""
   }
 ];
