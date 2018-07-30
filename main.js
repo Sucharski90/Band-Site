@@ -73,12 +73,19 @@ const nextMember = () => {
   index++;
   renderMembers();
   console.log(index);
+  if(index > members.length) {
+    index = 0
+    }
 };
 const lastMember = () => {
   index -= 1;
   renderMembers();
   console.log(index);
+  if(index > members.length) {
+    index = 0
+    }
 };
+
 
   let next = document.querySelector('#next')
   next.addEventListener('click', nextMember);
