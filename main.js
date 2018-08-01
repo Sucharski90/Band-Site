@@ -73,8 +73,8 @@ const nextMember = () => {
   index++;
   console.log(index);
   renderMembers();
-  if(index >= 4) {
-    index = 0
+  if(index == 4) {
+    index = -1
     }
 };
 const lastMember = () => {
@@ -82,14 +82,14 @@ const lastMember = () => {
   renderMembers();
   console.log(index);
   if(index == 0) {
-    index = 4
+    index = 5
     }
 };
 
 
-  let next = document.querySelector('#next')
-  next.addEventListener('click', nextMember);
+let next = document.querySelector('#next')
+next.addEventListener('click', nextMember);
 
-  let last = document.querySelector('#last')
-  last.addEventListener('click', lastMember);
+let last = document.querySelector('#last')
+last.addEventListener('click', lastMember);
 
