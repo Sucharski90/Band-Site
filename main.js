@@ -57,7 +57,7 @@ const members = [
 ];
 
 // render info
-const renderMembers = () => {
+let renderMembers = () => {
   let currentMember = members[index];
   let name = document.querySelector('#name');
   let instrument = document.querySelector('#instrument');
@@ -71,18 +71,20 @@ renderMembers();
 // cycle members
 const nextMember = () => {
   index++;
-  renderMembers();
   console.log(index);
-  if(index > members.length) {
-    index = 0
+  renderMembers();
+  if(index >= 4) {
+    next.style.display = 'none';
+    } else {
+      next.style.display = 'block';
     }
 };
 const lastMember = () => {
-  index -= 1;
+  index --;
   renderMembers();
   console.log(index);
-  if(index > members.length) {
-    index = 0
+  if(index == 0) {
+    index = 4
     }
 };
 
