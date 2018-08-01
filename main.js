@@ -74,9 +74,7 @@ const nextMember = () => {
   console.log(index);
   renderMembers();
   if(index >= 4) {
-    next.style.display = 'none';
-    } else {
-      next.style.display = 'block';
+    index = 0
     }
 };
 const lastMember = () => {
